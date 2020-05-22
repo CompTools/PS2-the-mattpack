@@ -1,0 +1,11 @@
+#Using regular expression
+
+#Total flights leaving from GNV
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "MIA" | wc -l 
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "CLT" | wc -l 
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "ATL" | wc -l
+
+#Total flights arriving at GNV 15 minutes, or more, later
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "ATL" | cut -f 16 -d "," | sort| uniq -c |sort -nr
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "MIA" | cut -f 16 -d "," | sort| uniq -c |sort -nr  
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "CLT" | cut -f 16 -d "," | sort| uniq -c |sort -nr
