@@ -1,0 +1,7 @@
+#Using regular expression
+
+#Total flights leaving from GNV
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "MIA" | wc -l 
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "CLT" | wc -l 
+cat Flight_data  | grep -E '[[:digit:]]\,\"GNV\"' | grep "ATL" | wc -l
+
