@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 
 #Only selects the airports in Florida
 
