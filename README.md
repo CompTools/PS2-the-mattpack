@@ -36,7 +36,7 @@ MIA | 205  |  33 |  19
 
 3. Within a function, print a list of all unique airport codes contained in the dataset. (*3 points*)
 
-**Grading: Not a function; 2.5 pts** 
+**Grading: Not a function; ~~2.5~~ 3 pts (updated to be consistent with other groups)** 
 
 4. Within a function list the cities in Florida that have airports in the dataset. (*2 points*)
 
@@ -75,4 +75,4 @@ Total for question 2 | 13| **9.5**
 +5
 
 **Total points:**
- 20.5/20
+ 21/20
